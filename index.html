@@ -4,6 +4,7 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -27,7 +28,8 @@
       line-height: 1.7;
     }
 
-    /* NAVIGATION */
+
+    /* ================= NAVIGATION ================= */
 
     nav {
       position: absolute;
@@ -41,8 +43,8 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 18px;
-      font-size: 14px;
+      margin: 0 14px;
+      font-size: 13px;
       letter-spacing: 1px;
       text-transform: uppercase;
     }
@@ -52,10 +54,12 @@
       padding-bottom: 6px;
     }
 
-    /* HERO / HOME */
+
+    /* ================= HOME ================= */
 
     .hero {
       min-height: 100vh;
+
       background:
         linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
         url("homepage.jpg");
@@ -111,7 +115,8 @@
       text-transform: uppercase;
     }
 
-    /* GENERAL SECTIONS */
+
+    /* ================= GENERAL ================= */
 
     section {
       max-width: 1050px;
@@ -132,18 +137,16 @@
       font-size: 17px;
     }
 
-    /* ABOUT */
 
-    .about {
-      background: white;
-    }
+    /* ================= ABOUT ================= */
 
     .about-content {
       max-width: 850px;
       margin: auto;
     }
 
-    /* RESEARCH */
+
+    /* ================= RESEARCH PROJECTS ================= */
 
     .research-section {
       background: #f5f5f5;
@@ -151,7 +154,7 @@
 
     .research-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
     }
 
@@ -165,58 +168,84 @@
       margin-bottom: 15px;
       font-size: 20px;
     }
-/* ACADEMIC & RESEARCH JOURNEY */
 
-.journey-block {
-  margin-top: 30px;
-}
 
-.journey-block h3 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 8px;
-}
+    /* ================= RESEARCH JOURNEY ================= */
 
-.journey-caption {
-  text-align: center;
-  color: #666;
-  margin-bottom: 30px;
-}
+    .journey-block {
+      margin-bottom: 75px;
+    }
 
-.photo-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
+    .journey-block:last-child {
+      margin-bottom: 0;
+    }
 
-.photo-gallery img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 3px;
-}
+    .journey-block h3 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
 
-/* Make gallery mobile friendly */
+    .journey-caption {
+      text-align: center;
+      color: #666;
+      max-width: 750px;
+      margin: 0 auto 30px;
+    }
 
-@media (max-width: 700px) {
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
 
-  .photo-gallery {
-    grid-template-columns: 1fr;
-  }
+    .photo-gallery.two-photos {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-  .photo-gallery img {
-    height: auto;
-  }
+    .photo-gallery.one-photo {
+      grid-template-columns: 1fr;
+      max-width: 550px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-}
+    .photo-item {
+      text-align: center;
+    }
 
-    /* PUBLICATIONS */
+    .photo-gallery img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .photo-item p {
+      font-size: 14px;
+      color: #666;
+      margin-top: 8px;
+    }
+
+
+    /* ================= PUBLICATIONS ================= */
 
     .publication {
       margin-bottom: 30px;
     }
 
-    /* CONTACT */
+    .manuscript-heading {
+      margin-top: 55px;
+      margin-bottom: 30px;
+      font-size: 23px;
+    }
+
+
+    /* ================= CONTACT ================= */
 
     .contact {
       text-align: center;
@@ -228,7 +257,8 @@
       text-decoration: none;
     }
 
-    /* FOOTER */
+
+    /* ================= FOOTER ================= */
 
     footer {
       text-align: center;
@@ -238,13 +268,26 @@
       font-size: 14px;
     }
 
-    /* MOBILE */
+
+    /* ================= MOBILE ================= */
 
     @media (max-width: 700px) {
 
+      nav {
+        padding: 18px 8px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 13px;
+      }
+
       nav a {
-        margin: 0 7px;
-        font-size: 11px;
+        margin: 0;
+        font-size: 10px;
+      }
+
+      .hero {
+        padding: 100px 24px 40px;
       }
 
       .hero h1 {
@@ -253,30 +296,60 @@
       }
 
       .hero h2 {
-        font-size: 17px;
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 2px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-gallery,
+      .photo-gallery.two-photos,
+      .photo-gallery.one-photo {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-gallery img {
+        height: auto;
       }
 
     }
 
   </style>
+
 </head>
 
 
 <body>
 
 
-<!-- NAVIGATION -->
+<!-- ================= NAVIGATION ================= -->
 
 <nav>
+
   <a href="#about">About</a>
+
   <a href="#research">Research Projects</a>
+
+  <a href="#journey">Research Journey</a>
+
   <a href="#publications">Publications</a>
+
   <a href="#cv">CV</a>
+
   <a href="#contact">Contact</a>
+
 </nav>
 
 
-<!-- HOME -->
+
+<!-- ================= HOME ================= -->
 
 <header class="hero">
 
@@ -303,9 +376,10 @@
 </header>
 
 
-<!-- ABOUT -->
 
-<section id="about" class="about">
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
 
   <h2>About</h2>
 
@@ -334,76 +408,153 @@
 </section>
 
 
-<!-- RESEARCH PROJECTS-->
+
+<!-- ================= RESEARCH PROJECTS ================= -->
 
 <div id="research" class="research-section">
 
-<section>
+  <section>
 
-  <h2>Research Projects</h2>
+    <h2>Research Projects</h2>
 
-  <div class="research-grid">
+    <div class="research-grid">
 
 
-    <div class="research-card">
+      <div class="research-card">
 
-      <h3>Fertilization & Collembola</h3>
+        <h3>Fertilization & Collembola</h3>
 
-      <p>
-        Investigating how fertilization affects Collembola abundance
-        in natural and experimental grasslands.
-      </p>
+        <p>
+          Investigating how fertilization affects Collembola abundance
+          in natural and experimental grasslands.
+        </p>
+
+      </div>
+
+
+      <div class="research-card">
+
+        <h3>Land-Use Intensification</h3>
+
+        <p>
+          Investigating how land-use intensification affects plants,
+          Collembola, fungi, and their interactions through time.
+        </p>
+
+      </div>
+
+
+      <div class="research-card">
+
+        <h3>Plant–Collembola Interactions</h3>
+
+        <p>
+          Comparing interactions between plant and Collembola communities
+          in experimental and real-world grassland ecosystems.
+        </p>
+
+      </div>
+
+
+      <div class="research-card">
+
+        <h3>Leaf Calcium & Functional Traits</h3>
+
+        <p>
+          My independent research project examines how leaf calcium
+          variation and plant functional groups influence Collembola
+          communities and functional traits.
+        </p>
+
+      </div>
+
 
     </div>
 
-
-    <div class="research-card">
-
-      <h3>Land-Use Intensification</h3>
-
-      <p>
-        Investigating how land-use intensification affects plants,
-        Collembola, fungi, and their interactions through time.
-      </p>
-
-    </div>
-
-
-    <div class="research-card">
-
-      <h3>Plant-Collembola Interactions</h3>
-
-      <p>
-        Comparing interactions between plant and Collembola communities
-        in experimental and real-world grassland ecosystems.
-      </p>
-
-    </div>
-
-
-    <div class="research-card">
-
-      <h3>Leaf Calcium & Functional Traits</h3>
-
-      <p>
-        My independent research project examines how leaf calcium
-        variation and plant functional groups influence Collembola
-        communities and functional traits.
-      </p>
-
-    </div>
-
-
-  </div>
-
-</section>
+  </section>
 
 </div>
-<!-- ACADEMIC & RESEARCH JOURNEY -->
+
+
+
+<!-- ================= RESEARCH & ACADEMIC JOURNEY ================= -->
 
 <section id="journey">
 
-  <h2>Academic & Research Journey</h2>
+  <h2>Research & Academic Journey</h2>
+
+
+
+  <!-- RESEARCH INTERNSHIP -->
+
+  <div class="journey-block">
+
+    <h3>Research Internship</h3>
+
+    <p class="journey-caption">
+      Microscopic work during my research internship at
+      Université du Québec à Montréal (UQAM), Canada.
+    </p>
+
+    <div class="photo-gallery one-photo">
+
+      <div class="photo-item">
+
+        <img
+          src="internship-microscopy.jpg"
+          alt="Microscopic work during my research internship at UQAM">
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- PHD RESEARCH -->
+
+  <div class="journey-block">
+
+    <h3>PhD Research</h3>
+
+    <p class="journey-caption">
+      Field and laboratory work during my doctoral research
+      at the University of Bern.
+    </p>
+
+    <div class="photo-gallery two-photos">
+
+
+      <div class="photo-item">
+
+        <img
+          src="phd-fieldwork1.jpg"
+          alt="Fieldwork during my PhD research">
+
+        <p>PhD fieldwork</p>
+
+      </div>
+
+
+      <div class="photo-item">
+
+        <img
+          src="phd-labwork1.jpg"
+          alt="Laboratory work during my PhD research">
+
+        <p>PhD laboratory work</p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- PHD DEFENSE -->
 
   <div class="journey-block">
 
@@ -415,24 +566,171 @@
 
     <div class="photo-gallery">
 
-      <img src="phd-defense1.jpg"
-           alt="PhD defense at the University of Bern">
 
-      <img src="phd-defense2.jpg"
-           alt="PhD defense celebration">
+      <div class="photo-item">
 
-      <img src="phd-defense3.jpg"
-           alt="PhD defense at the University of Bern">
+        <img
+          src="phd-defense1.jpg"
+          alt="PhD defense presentation">
+
+      </div>
+
+
+      <div class="photo-item">
+
+        <img
+          src="phd-defense2.jpg"
+          alt="PhD defense celebration">
+
+      </div>
+
+
+      <div class="photo-item">
+
+        <img
+          src="phd-defense3.jpg"
+          alt="PhD defense at the University of Bern">
+
+      </div>
+
 
     </div>
 
   </div>
 
+
+
+  <!-- STUDENT SUPERVISION -->
+
+  <div class="journey-block">
+
+    <h3>Student Supervision & Fieldwork</h3>
+
+    <p class="journey-caption">
+      Student research projects and practical fieldwork involving
+      soil fauna, biodiversity, and ecological sampling.
+    </p>
+
+    <div class="photo-gallery">
+
+
+      <div class="photo-item">
+
+        <img
+          src="student-project1.jpg"
+          alt="Student research project">
+
+        <p>Student research project</p>
+
+      </div>
+
+
+      <div class="photo-item">
+
+        <img
+          src="student-project2.jpg"
+          alt="Student research project">
+
+        <p>Student research project</p>
+
+      </div>
+
+
+      <div class="photo-item">
+
+        <img
+          src="student-bugnet1.jpg"
+          alt="Student soil sampling at BugNet">
+
+        <p>Student fieldwork at BugNet</p>
+
+      </div>
+
+
+      <div class="photo-item">
+
+        <img
+          src="practical-field1.jpg"
+          alt="Practical ecological fieldwork">
+
+      </div>
+
+
+      <div class="photo-item">
+
+        <img
+          src="practical-field2.jpg"
+          alt="Practical ecological fieldwork">
+
+      </div>
+
+
+      <div class="photo-item">
+
+        <img
+          src="practical-field3.jpg"
+          alt="Practical ecological fieldwork">
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- RESEARCH VISITS -->
+
+  <div class="journey-block">
+
+    <h3>Research Visits & Collaborations</h3>
+
+    <p class="journey-caption">
+      Visits to ecological experiments and research sites,
+      including the HOME experiment and PaNDiv.
+    </p>
+
+    <div class="photo-gallery two-photos">
+
+
+      <div class="photo-item">
+
+        <img
+          src="home-visit1.jpg"
+          alt="Visit to the HOME experiment">
+
+        <p>HOME experiment</p>
+
+      </div>
+
+
+      <div class="photo-item">
+
+        <img
+          src="pandiv-visit1.jpg"
+          alt="Visit to the PaNDiv experiment">
+
+        <p>PaNDiv experiment</p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
 </section>
+
+
+
+<!-- ================= PUBLICATIONS ================= -->
 
 <section id="publications">
 
   <h2>Publications</h2>
+
 
   <div class="publication">
 
@@ -465,7 +763,8 @@
   </div>
 
 
-  <h3 style="margin-top: 50px; margin-bottom: 30px;">
+
+  <h3 class="manuscript-heading">
     Manuscripts Under Review & In Preparation
   </h3>
 
@@ -479,7 +778,6 @@
       <strong>(Under review).</strong>
       Collembolan functional composition is driven by plant attributes
       rather than nitrogen enrichment and fungal pathogens.
-      
     </p>
 
   </div>
@@ -509,36 +807,40 @@
 
   </div>
 
+
 </section>
 
-<!-- CV -->
+
+
+<!-- ================= CV ================= -->
 
 <div id="cv" class="research-section">
 
-<section>
+  <section>
 
-  <h2>Curriculum Vitae</h2>
+    <h2>Curriculum Vitae</h2>
 
-  <div style="text-align:center;">
+    <div style="text-align:center;">
 
-    <p>
-      My academic CV includes my education, research experience,
-      publications, academic supervision, grants, conference presentations,
-      and technical skills.
-    </p>
+      <p>
+        My academic CV includes my education, research experience,
+        publications, academic supervision, grants, conference presentations,
+        and technical skills.
+      </p>
 
-    <p>
-      <strong>Downloadable CV coming soon.</strong>
-    </p>
+      <p>
+        <strong>Downloadable CV coming soon.</strong>
+      </p>
 
-  </div>
+    </div>
 
-</section>
+  </section>
 
 </div>
 
 
-<!-- CONTACT -->
+
+<!-- ================= CONTACT ================= -->
 
 <section id="contact" class="contact">
 
@@ -561,7 +863,8 @@
 </section>
 
 
-<!-- FOOTER -->
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
@@ -571,5 +874,6 @@
 
 
 </body>
+
 </html>
 
