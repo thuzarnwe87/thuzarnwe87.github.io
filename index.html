@@ -165,7 +165,50 @@
       margin-bottom: 15px;
       font-size: 20px;
     }
+/* ACADEMIC & RESEARCH JOURNEY */
 
+.journey-block {
+  margin-top: 30px;
+}
+
+.journey-block h3 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.journey-caption {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* Make gallery mobile friendly */
+
+@media (max-width: 700px) {
+
+  .photo-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-gallery img {
+    height: auto;
+  }
+
+}
     /* PUBLICATIONS */
 
     .publication {
@@ -355,7 +398,36 @@
 </section>
 
 </div>
+<!-- ACADEMIC & RESEARCH JOURNEY -->
 
+<section id="journey">
+
+  <h2>Academic & Research Journey</h2>
+
+  <div class="journey-block">
+
+    <h3>PhD Defense</h3>
+
+    <p class="journey-caption">
+      PhD defense at the University of Bern, Switzerland.
+    </p>
+
+    <div class="photo-gallery">
+
+      <img src="phd-defense1.jpg"
+           alt="PhD defense at the University of Bern">
+
+      <img src="phd-defense2.jpg"
+           alt="PhD defense celebration">
+
+      <img src="phd-defense3.jpg"
+           alt="PhD defense at the University of Bern">
+
+    </div>
+
+  </div>
+
+</section>
 
 <section id="publications">
 
