@@ -1,0 +1,502 @@
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dr. Thu Zar Nwe | Ecology</title>
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    /* NAVIGATION */
+
+    nav {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      text-align: center;
+      padding: 25px 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 18px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid white;
+      padding-bottom: 6px;
+    }
+
+    /* HERO / HOME */
+
+    .hero {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url("homepage.jpg");
+
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+      color: white;
+      padding: 40px;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 54px;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-size: 22px;
+      font-weight: normal;
+      letter-spacing: 3px;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      letter-spacing: 1px;
+    }
+
+    .hero-line {
+      width: 75%;
+      margin: 20px auto;
+      border-top: 2px solid white;
+    }
+
+    .learn-more {
+      display: inline-block;
+      margin-top: 45px;
+      color: white;
+      text-decoration: none;
+      letter-spacing: 3px;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    /* GENERAL SECTIONS */
+
+    section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 90px 30px;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    section p {
+      margin-bottom: 20px;
+      font-size: 17px;
+    }
+
+    /* ABOUT */
+
+    .about {
+      background: white;
+    }
+
+    .about-content {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    /* RESEARCH */
+
+    .research-section {
+      background: #f5f5f5;
+    }
+
+    .research-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .research-card {
+      background: white;
+      padding: 30px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    }
+
+    .research-card h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    /* PUBLICATIONS */
+
+    .publication {
+      margin-bottom: 30px;
+    }
+
+    /* CONTACT */
+
+    .contact {
+      text-align: center;
+      background: #f5f5f5;
+    }
+
+    .contact a {
+      color: #246b42;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #222;
+      color: white;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      nav a {
+        margin: 0 7px;
+        font-size: 11px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+        letter-spacing: 4px;
+      }
+
+      .hero h2 {
+        font-size: 17px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
+  <a href="#cv">CV</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+<!-- HOME -->
+
+<header class="hero">
+
+  <div class="hero-content">
+
+    <h1>Thu Zar Nwe</h1>
+
+    <div class="hero-line"></div>
+
+    <h2>
+      Ecologist | Soil Biodiversity | Plant–Soil Interactions
+    </h2>
+
+    <p>
+      Institute of Plant Sciences · University of Bern · Switzerland
+    </p>
+
+    <a class="learn-more" href="#about">
+      Learn More ↓
+    </a>
+
+  </div>
+
+</header>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+  <h2>About</h2>
+
+  <div class="about-content">
+
+    <p>
+      I am a Burmese ecologist from Myanmar currently working as a
+      <strong>Postdoctoral Researcher in the Plant Ecology group at the
+      Institute of Plant Sciences, University of Bern, Switzerland</strong>.
+    </p>
+
+    <p>
+      I am interested in the complex interactions between plants and soil
+      organisms, particularly how their functional traits interact and how
+      these relationships respond to environmental change.
+    </p>
+
+    <p>
+      My research combines grassland field experiments, laboratory work,
+      soil-fauna identification and trait measurements, ecological modelling,
+      and statistical data analysis.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- RESEARCH PROJECTS-->
+
+<div id="research" class="research-section">
+
+<section>
+
+  <h2>Research</h2>
+
+  <div class="research-grid">
+
+
+    <div class="research-card">
+
+      <h3>Fertilization & Collembola</h3>
+
+      <p>
+        Investigating how fertilization affects Collembola abundance
+        in natural and experimental grasslands.
+      </p>
+
+    </div>
+
+
+    <div class="research-card">
+
+      <h3>Land-Use Intensification</h3>
+
+      <p>
+        Investigating how land-use intensification affects plants,
+        Collembola, fungi, and their interactions through time.
+      </p>
+
+    </div>
+
+
+    <div class="research-card">
+
+      <h3>Plant-Collembola Interactions</h3>
+
+      <p>
+        Comparing interactions between plant and Collembola communities
+        in experimental and real-world grassland ecosystems.
+      </p>
+
+    </div>
+
+
+    <div class="research-card">
+
+      <h3>Leaf Calcium & Functional Traits</h3>
+
+      <p>
+        My independent research project examines how leaf calcium
+        variation and plant functional groups influence Collembola
+        communities and functional traits.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+</div>
+
+
+<section id="publications">
+
+  <h2>Publications</h2>
+
+  <div class="publication">
+
+    <strong>
+      Nwe, T. Z., Maaroufi, N., Allan, E., Soliveres, S., & Kempel, A. (2023)
+    </strong>
+
+    <p>
+      Plant attributes interact with fungal pathogens and nitrogen addition
+      to drive soil enzymatic activities and their temporal variation.
+      <em>Functional Ecology, 37(3), 564–575.</em>
+    </p>
+
+  </div>
+
+
+  <div class="publication">
+
+    <strong>
+      Pichon, N. A., Cappelli, S. L., Soliveres, S., Mannall, T.,
+      Nwe, T. Z., et al. (2023)
+    </strong>
+
+    <p>
+      Nitrogen availability and plant functional composition modify
+      biodiversity–multifunctionality relationships.
+      <em>Ecology Letters.</em>
+    </p>
+
+  </div>
+
+
+  <h3 style="margin-top: 50px; margin-bottom: 30px;">
+    Manuscripts Under Review & In Preparation
+  </h3>
+
+
+  <div class="publication">
+
+    <p>
+      <strong>Nwe, T. Z.</strong>, Handa, T., Kempel, A., Soliveres, S.,
+      Maaroufi, N., Raymond-Léonard, L. J., Pichon, N. A.,
+      Cappelli, S. L., & Allan, E.
+      <strong>(Under review).</strong>
+      Collembolan functional composition is driven by plant attributes
+      rather than nitrogen enrichment and fungal pathogens.
+      
+    </p>
+
+  </div>
+
+
+  <div class="publication">
+
+    <p>
+      <strong>Nwe, T. Z.</strong>, Pichon, N. A., Cappelli, S. L.,
+      Kempel, A., Soliveres, S., Allan, E., & Maaroufi, N.
+      <strong>(In preparation).</strong>
+      Leaf traits and plant cover mediate the impacts of nitrogen addition
+      and plant diversity on soil mites.
+    </p>
+
+  </div>
+
+
+  <div class="publication">
+
+    <p>
+      <strong>Nwe, T. Z.</strong>, Allan, E., & Fischer, M.
+      <strong>(In preparation).</strong>
+      Direct and indirect effects of fertilization on Collembola
+      (springtail) abundance differ in natural and experimental grasslands.
+    </p>
+
+  </div>
+
+</section>
+
+<!-- CV -->
+
+<div id="cv" class="research-section">
+
+<section>
+
+  <h2>Curriculum Vitae</h2>
+
+  <div style="text-align:center;">
+
+    <p>
+      My academic CV includes my education, research experience,
+      publications, academic supervision, grants, conference presentations,
+      and technical skills.
+    </p>
+
+    <p>
+      <strong>Downloadable CV coming soon.</strong>
+    </p>
+
+  </div>
+
+</section>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+  <h2>Contact</h2>
+
+  <p>
+    <strong>Dr. Thu Zar Nwe</strong><br>
+    Institute of Plant Sciences<br>
+    University of Bern<br>
+    Switzerland
+  </p>
+
+  <p>
+    Email:
+    <a href="mailto:thu.nwe@unibe.ch">
+      thu.nwe@unibe.ch
+    </a>
+  </p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  © Dr. Thu Zar Nwe
+
+</footer>
+
+
+</body>
+</html>
+
