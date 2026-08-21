@@ -199,39 +199,42 @@
       gap: 18px;
     }
 
-    .photo-gallery.two-photos {
-      grid-template-columns: repeat(2, 1fr);
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+   /* CONFERENCE PRESENTATIONS */
 
-    .photo-gallery.one-photo {
-      grid-template-columns: 1fr;
-      max-width: 550px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+.conference-gallery {
+  grid-template-columns: repeat(2, minmax(0, 380px));
+  justify-content: center;
+  gap: 25px;
+}
 
-    .photo-item {
-      text-align: center;
-    }
+.conference-gallery .photo-item {
+  text-align: center;
+}
 
-    .photo-gallery img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
-      display: block;
-      border-radius: 4px;
-    }
+.conference-gallery img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 4px;
+}
 
-    .photo-item p {
-      font-size: 14px;
-      color: #666;
-      margin-top: 8px;
-    }
+.conference-gallery .photo-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
 
+@media (max-width: 700px) {
+  .conference-gallery {
+    grid-template-columns: 1fr;
+  }
 
+  .conference-gallery img {
+    height: auto;
+  }
+}
     /* ================= PUBLICATIONS ================= */
 
     .publication {
@@ -628,27 +631,19 @@
 
   <p class="journey-caption">
     Sharing research through poster presentations and scientific discussions
-    during my PhD and collaborative research activities.
+    during my PhD.
   </p>
 
-  <div class="photo-gallery">
+ <div class="photo-gallery conference-gallery">
 
-    <div class="photo-item">
-      <img src="Poster1.jpg"
-           alt="First poster presentation during my PhD">
-      <p>
-        My first poster presentation during my PhD.
-      </p>
-    </div>
+  <div class="photo-item">
+    <img src="poster1.jpg" alt="Poster presentation during my PhD">
+    <p>My first poster presentation during my PhD.</p>
+  </div>
 
-    <div class="photo-item">
-      <img src="Poster_Bern2.jpg"
-           alt="Presenting collaborative research at Swiss Global Change Day">
-      <p>
-        Presenting collaborative research at Swiss Global Change Day.
-      </p>
-    </div>
-    
+  <div class="photo-item">
+    <img src="poster2.jpg" alt="Swiss Global Change Day">
+    <p>Presenting collaborative research at Swiss Global Change Day.</p>
   </div>
 
 </div>
