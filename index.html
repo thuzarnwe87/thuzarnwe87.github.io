@@ -169,71 +169,101 @@
       font-size: 20px;
     }
 
+/* ================= RESEARCH JOURNEY ================= */
 
-    /* ================= RESEARCH JOURNEY ================= */
-
-    .journey-block {
-      margin-bottom: 75px;
-    }
-
-    .journey-block:last-child {
-      margin-bottom: 0;
-    }
-
-    .journey-block h3 {
-      text-align: center;
-      font-size: 24px;
-      margin-bottom: 8px;
-    }
-
-    .journey-caption {
-      text-align: center;
-      color: #666;
-      max-width: 750px;
-      margin: 0 auto 30px;
-    }
-
-    .photo-gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-   /* CONFERENCE PRESENTATIONS */
-
-.conference-gallery {
-  grid-template-columns: repeat(2, minmax(0, 380px));
-  justify-content: center;
-  gap: 25px;
+.journey-block {
+  margin-bottom: 65px;
 }
 
-.conference-gallery .photo-item {
+.journey-block:last-child {
+  margin-bottom: 0;
+}
+
+.journey-block h3 {
   text-align: center;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.journey-caption {
+  text-align: center;
+  color: #666;
+  max-width: 750px;
+  margin: 0 auto 25px;
+}
+
+
+/* GENERAL PHOTO GALLERY */
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 280px);
+  justify-content: center;
+  gap: 22px;
+}
+
+.photo-gallery.two-photos {
+  grid-template-columns: repeat(2, 300px);
+}
+
+.photo-gallery.one-photo {
+  grid-template-columns: 450px;
+}
+
+.photo-item {
+  text-align: center;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 4px;
+}
+
+.photo-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+
+/* CONFERENCE PRESENTATIONS */
+
+.conference-gallery {
+  grid-template-columns: repeat(2, 300px);
 }
 
 .conference-gallery img {
   width: 100%;
-  height: 340px;
+  height: 240px;
   object-fit: cover;
-  object-position: center;
-  border-radius: 4px;
 }
 
-.conference-gallery .photo-item p {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #666;
-  line-height: 1.5;
-}
+
+/* MOBILE */
 
 @media (max-width: 700px) {
+
+  .photo-gallery,
+  .photo-gallery.two-photos,
+  .photo-gallery.one-photo,
   .conference-gallery {
     grid-template-columns: 1fr;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
+  .photo-gallery img,
   .conference-gallery img {
+    width: 100%;
     height: auto;
   }
+
 }
     /* ================= PUBLICATIONS ================= */
 
@@ -645,6 +675,8 @@
     <img src="poster2.jpg" alt="Swiss Global Change Day">
     <p>Presenting collaborative research at Swiss Global Change Day.</p>
   </div>
+
+</div>
 
 </div>
 
