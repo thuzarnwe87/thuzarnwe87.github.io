@@ -1,5 +1,3 @@
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -169,100 +167,108 @@
       font-size: 20px;
     }
 
-/* ================= ACADEMIC JOURNEY ================= */
 
-.journey-block {
-  margin-bottom: 65px;
-}
+    /* ================= ACADEMIC JOURNEY ================= */
 
-.journey-block:last-child {
-  margin-bottom: 0;
-}
+    .journey-block {
+      margin-bottom: 65px;
+    }
 
-.journey-block h3 {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 8px;
-}
+    .journey-block:last-child {
+      margin-bottom: 0;
+    }
 
-.journey-caption {
-  text-align: center;
-  color: #666;
-  max-width: 750px;
-  margin: 0 auto 25px;
-}
+    .journey-block h3 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
 
-
-/* GENERAL PHOTO GALLERY */
-
-.photo-gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 280px);
-  justify-content: center;
-  gap: 22px;
-}
-
-.photo-gallery.two-photos {
-  grid-template-columns: repeat(2, 300px);
-}
-
-.photo-gallery.one-photo {
-  grid-template-columns: 450px;
-}
-
-.photo-item {
-  text-align: center;
-}
-
-.photo-gallery img {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  border-radius: 4px;
-}
-
-.photo-item p {
-  margin-top: 8px;
-  font-size: 14px;
-  color: #666;
-  line-height: 1.4;
-}
+    .journey-caption {
+      text-align: center;
+      color: #666;
+      max-width: 750px;
+      margin: 0 auto 25px;
+    }
 
 
-/* CONFERENCE PRESENTATIONS */
+    /* ================= GENERAL PHOTO GALLERY ================= */
 
-.conference-gallery {
-  grid-template-columns: repeat(2, 300px);
-}
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 280px);
+      justify-content: center;
+      gap: 22px;
+    }
 
-.conference-gallery img {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
-}
+    .photo-gallery.two-photos {
+      grid-template-columns: repeat(2, 300px);
+    }
+
+    .photo-gallery.one-photo {
+      grid-template-columns: 450px;
+    }
+
+    .photo-item {
+      text-align: center;
+    }
+
+    .photo-gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      border-radius: 4px;
+    }
+
+    .photo-item p {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #666;
+      line-height: 1.4;
+    }
 
 
-/* MOBILE */
+    /* ================= CONFERENCE PRESENTATIONS ================= */
 
-@media (max-width: 700px) {
+    .conference-gallery {
+      grid-template-columns: repeat(2, 300px);
+    }
 
-  .photo-gallery,
-  .photo-gallery.two-photos,
-  .photo-gallery.one-photo,
-  .conference-gallery {
-    grid-template-columns: 1fr;
-    max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .conference-gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
 
-  .photo-gallery img,
-  .conference-gallery img {
-    width: 100%;
-    height: auto;
-  }
+
+    /* ================= RESEARCH GROUPS & COLLABORATIONS ================= */
+
+    .group-photo {
+      max-width: 760px;
+      margin: 0 auto 50px;
+      text-align: center;
+    }
+
+    .group-photo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: contain;
+      margin: 0 auto;
+      border-radius: 4px;
+    }
+
+    .group-photo p {
+      margin-top: 12px;
+      font-size: 15px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+
     /* ================= PUBLICATIONS ================= */
 
     .publication {
@@ -275,30 +281,7 @@
       font-size: 23px;
     }
 
-/* RESEARCH GROUPS & COLLABORATIONS */
 
-.group-photo {
-  max-width: 760px;
-  margin: 0 auto 50px;
-  text-align: center;
-}
-
-.group-photo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 500px;
-  object-fit: contain;
-  margin: 0 auto;
-  border-radius: 4px;
-}
-
-.group-photo p {
-  margin-top: 12px;
-  font-size: 15px;
-  color: #666;
-  line-height: 1.5;
-}
     /* ================= CONTACT ================= */
 
     .contact {
@@ -325,68 +308,81 @@
 
     /* ================= MOBILE ================= */
 
-@media (max-width: 700px) {
+    @media (max-width: 700px) {
 
-  nav {
-    padding: 18px 8px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 8px 13px;
-  }
+      nav {
+        padding: 18px 8px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 13px;
+      }
 
-  nav a {
-    margin: 0;
-    font-size: 10px;
-  }
+      nav a {
+        margin: 0;
+        font-size: 10px;
+      }
 
-  .hero {
-    padding: 100px 24px 40px;
-  }
+      .hero {
+        padding: 100px 24px 40px;
+      }
 
-  .hero h1 {
-    font-size: 34px;
-    letter-spacing: 4px;
-  }
+      .hero h1 {
+        font-size: 34px;
+        letter-spacing: 4px;
+      }
 
-  .hero h2 {
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 2px;
-  }
+      .hero h2 {
+        font-size: 16px;
+        line-height: 1.6;
+        letter-spacing: 2px;
+      }
 
-  .hero p {
-    font-size: 15px;
-  }
+      .hero p {
+        font-size: 15px;
+      }
 
-  .research-grid {
-    grid-template-columns: 1fr;
-  }
+      .research-grid {
+        grid-template-columns: 1fr;
+      }
 
-  .photo-gallery,
-  .photo-gallery.two-photos,
-  .photo-gallery.one-photo {
-    grid-template-columns: 1fr;
-  }
+      .photo-gallery,
+      .photo-gallery.two-photos,
+      .photo-gallery.one-photo,
+      .conference-gallery {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-  .photo-gallery img {
-    height: auto;
-  }
+      .photo-gallery img,
+      .conference-gallery img {
+        width: 100%;
+        height: auto;
+      }
 
-  .group-photo {
-    max-width: 100%;
-    margin-bottom: 40px;
-  }
+      .group-photo {
+        max-width: 100%;
+        margin-bottom: 40px;
+      }
 
-  .group-photo img {
-    width: 100%;
-    height: auto;
-    max-height: none;
-  }
+      .group-photo img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+      }
 
-}
+    }
 
-</style>
+  </style>
+
+</head>
+
+
+<body>
+
+
 <!-- ================= NAVIGATION ================= -->
 
 <nav>
@@ -435,8 +431,6 @@
 
 <!-- ================= ABOUT ================= -->
 
-<!-- ================= ABOUT ================= -->
-
 <section id="about">
 
   <h2>About</h2>
@@ -458,6 +452,8 @@
   </div>
 
 </section>
+
+
 <!-- ================= RESEARCH PROJECTS ================= -->
 
 <div id="research" class="research-section">
@@ -467,7 +463,6 @@
     <h2>Research Projects</h2>
 
     <div class="research-grid">
-
 
       <div class="research-card">
 
@@ -517,7 +512,6 @@
 
       </div>
 
-
     </div>
 
   </section>
@@ -530,7 +524,6 @@
 <section id="journey">
 
   <h2>Academic Journey</h2>
-
 
 
   <!-- RESEARCH INTERNSHIP -->
@@ -572,7 +565,6 @@
 
     <div class="photo-gallery two-photos">
 
-
       <div class="photo-item">
 
         <img
@@ -594,24 +586,22 @@
 
       </div>
 
-
     </div>
 
   </div>
 
 
-  <!-- PHD DEFENSE in 2023 -->
+  <!-- PHD DEFENSE -->
 
   <div class="journey-block">
 
-    <h3>PhD Defense in 2023 </h3>
+    <h3>PhD Defense in 2023</h3>
 
     <p class="journey-caption">
       PhD defense at the University of Bern, Switzerland.
     </p>
 
     <div class="photo-gallery">
-
 
       <div class="photo-item">
 
@@ -639,72 +629,95 @@
 
       </div>
 
+    </div>
+
+  </div>
+
+
+  <!-- CONFERENCE PRESENTATIONS -->
+
+  <div class="journey-block">
+
+    <h3>Conference Presentations</h3>
+
+    <div class="photo-gallery conference-gallery">
+
+      <div class="photo-item">
+
+        <img
+          src="Poster1.jpg"
+          alt="Poster presentation during my PhD">
+
+        <p>
+          My first poster presentation during my PhD at BES.
+        </p>
+
+      </div>
+
+
+      <div class="photo-item">
+
+        <img
+          src="Poster_Bern1.jpg"
+          alt="Swiss Global Change Day">
+
+        <p>
+          Presenting collaborative research at Swiss Global Change Day.
+        </p>
+
+      </div>
 
     </div>
 
   </div>
 
-<div class="photo-gallery conference-gallery">
 
-  <div class="photo-item">
-    <img src="Poster1.jpg"
-         alt="Poster presentation during my PhD">
-    <p>My first poster presentation during my PhD at BES.</p>
-  </div>
-
-  <div class="photo-item">
-    <img src="Poster_Bern1.jpg"
-         alt="Swiss Global Change Day">
-    <p>Presenting collaborative research at Swiss Global Change Day.</p>
-  </div>
-
-</div>
-  
-</div>
-  
   <!-- RESEARCH GROUPS & COLLABORATIONS -->
 
-<div class="journey-block">
+  <div class="journey-block">
 
-  <h3>Research Groups & Collaborations</h3>
+    <h3>Research Groups & Collaborations</h3>
 
-  <p class="journey-caption">
-    Research communities that have shaped my academic journey,
-    from my PhD in Community Ecology to my current work in Plant Ecology.
-  </p>
-
-
-  <!-- PhD GROUP -->
-
-  <div class="group-photo">
-
-    <img src="phd-group.jpg"
-         alt="Community Ecology group during my PhD">
-
-    <p>
-      Community Ecology group during my PhD at the
-      Institute of Plant Sciences, University of Bern.
+    <p class="journey-caption">
+      Research communities that have shaped my academic journey,
+      from my PhD in Community Ecology to my current work in Plant Ecology.
     </p>
+
+
+    <!-- PHD GROUP -->
+
+    <div class="group-photo">
+
+      <img
+        src="phd-group.jpg"
+        alt="Community Ecology group during my PhD">
+
+      <p>
+        Community Ecology group during my PhD at the
+        Institute of Plant Sciences, University of Bern.
+      </p>
+
+    </div>
+
+
+    <!-- CURRENT GROUP -->
+
+    <div class="group-photo">
+
+      <img
+        src="current-group.jpg"
+        alt="Plant Ecology group at the University of Bern">
+
+      <p>
+        Plant Ecology group, where I currently work as a postdoctoral researcher,
+        at the Institute of Plant Sciences, University of Bern.
+      </p>
+
+    </div>
 
   </div>
 
 
-  <!-- CURRENT GROUP -->
-
-  <div class="group-photo">
-
-    <img src="current-group.jpg"
-         alt="Plant Ecology group at the University of Bern">
-
-    <p>
-      Plant Ecology group, where I currently work as a postdoctoral researcher,
-      at the Institute of Plant Sciences, University of Bern.
-    </p>
-
-  </div>
-
-</div>
-  
   <!-- STUDENT SUPERVISION -->
 
   <div class="journey-block">
@@ -718,14 +731,13 @@
 
     <div class="photo-gallery">
 
-
       <div class="photo-item">
 
         <img
           src="student-project1.jpg"
           alt="Bachelor student's group project at PaNDiv">
 
-        <p> Bachelor student's group project at PaNDiv </p>
+        <p>Bachelor student's group project at PaNDiv</p>
 
       </div>
 
@@ -752,29 +764,44 @@
       </div>
 
 
-     <div class="photo-item">
-  <img
-    src="practical-field1.jpg"
-    alt="Practical ecological fieldwork">
-  <p>Practical fieldwork with students </p>
-</div>
+      <div class="photo-item">
 
-<div class="photo-item">
-  <img
-    src="practical-field2.jpg"
-    alt="Students measuring soil nitrogen availability">
-  <p>Students measuring soil nitrogen availability </p>
-</div>
+        <img
+          src="practical-field1.jpg"
+          alt="Practical ecological fieldwork">
 
-<div class="photo-item">
-  <img
-    src="practical-field3.jpg"
-    alt="Practical ecological fieldwork">
-  <p>Student fieldwork and sampling</p>
-</div>
-</div>
-</div>
+        <p>Practical fieldwork with students</p>
+
+      </div>
+
+
+      <div class="photo-item">
+
+        <img
+          src="practical-field2.jpg"
+          alt="Students measuring soil nitrogen availability">
+
+        <p>Students measuring soil nitrogen availability</p>
+
+      </div>
+
+
+      <div class="photo-item">
+
+        <img
+          src="practical-field3.jpg"
+          alt="Practical ecological fieldwork">
+
+        <p>Student fieldwork and sampling</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
+
 
 <!-- ================= PUBLICATIONS ================= -->
 
@@ -782,30 +809,31 @@
 
   <h2>Publications</h2>
 
- <div class="publication">
+  <div class="publication">
 
-  <p>
-    <strong>Nwe, T. Z.</strong>, Maaroufi, N., Allan, E.,
-    Soliveres, S., & Kempel, A. (2023)
-    Plant attributes interact with fungal pathogens and nitrogen addition
-    to drive soil enzymatic activities and their temporal variation.
-    <em>Functional Ecology, 37(3), 564–575.</em>
-  </p>
+    <p>
+      <strong>Nwe, T. Z.</strong>, Maaroufi, N., Allan, E.,
+      Soliveres, S., & Kempel, A. (2023)
+      Plant attributes interact with fungal pathogens and nitrogen addition
+      to drive soil enzymatic activities and their temporal variation.
+      <em>Functional Ecology, 37(3), 564–575.</em>
+    </p>
 
-</div>
+  </div>
 
 
-<div class="publication">
+  <div class="publication">
 
-  <p>
-    Pichon, N. A., Cappelli, S. L., Soliveres, S., Mannall, T.,
-    <strong>Nwe, T. Z.</strong>, et al. (2023)
-    Nitrogen availability and plant functional composition modify
-    biodiversity–multifunctionality relationships.
-    <em>Ecology Letters.</em>
-  </p>
+    <p>
+      Pichon, N. A., Cappelli, S. L., Soliveres, S., Mannall, T.,
+      <strong>Nwe, T. Z.</strong>, et al. (2023)
+      Nitrogen availability and plant functional composition modify
+      biodiversity–multifunctionality relationships.
+      <em>Ecology Letters.</em>
+    </p>
 
-</div>
+  </div>
+
 
   <h3 class="manuscript-heading">
     Manuscripts Under Review & In Preparation
@@ -850,21 +878,22 @@
 
   </div>
 
+
   <div class="publication">
 
-  <p>
-    Liu, X., Godoy, O., Daniel, C., Pichon, N. A., Cappelli, S. L.,
-    Mannall, T., <strong>Nwe, T. Z.</strong>, Vincent, H.,
-    Neubauer, L. C., Maaroufi, N. I., & Allan, E.
-    <strong>(In preparation).</strong>
-    Global change alters how niche differences translate into multiple
-    ecosystem functions.
-  </p>
+    <p>
+      Liu, X., Godoy, O., Daniel, C., Pichon, N. A., Cappelli, S. L.,
+      Mannall, T., <strong>Nwe, T. Z.</strong>, Vincent, H.,
+      Neubauer, L. C., Maaroufi, N. I., & Allan, E.
+      <strong>(In preparation).</strong>
+      Global change alters how niche differences translate into multiple
+      ecosystem functions.
+    </p>
 
-</div>
-  
+  </div>
 
 </section>
+
 
 <!-- ================= CV ================= -->
 
@@ -884,7 +913,7 @@
 
       <p>
         <a href="CV.pdf" target="_blank">
-          <strong>View / Download CV.pdf </strong>
+          <strong>View / Download CV (PDF)</strong>
         </a>
       </p>
 
@@ -893,6 +922,7 @@
   </section>
 
 </div>
+
 
 <!-- ================= CONTACT ================= -->
 
@@ -920,13 +950,10 @@
 <!-- ================= FOOTER ================= -->
 
 <footer>
-
   © Dr. Thu Zar Nwe
-
 </footer>
 
 
 </body>
 
 </html>
-
